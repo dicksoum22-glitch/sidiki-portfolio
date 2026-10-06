@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sidiki Camara Portfolio - Web Development Student">
+    <meta name="keywords" content="Sidiki Camara, Web Development, Portfolio, HTML, CSS, JavaScript">
+    <meta name="author" content="Sidiki Camara">
+    <title>Sidiki Camara - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Top navigation -->
+    <header class="site-header">
+        <div class="logo">Sidiki</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION (Flexbox) -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1>Sidiki Camara</h1>
+                <h2>Web Development Student</h2>
+                <p>I build modern, responsive web pages using HTML, CSS, and JavaScript.</p>
+
+                <div class="hero-buttons">
+                    <a href="#education" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+
+               <div class="social-icons">
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="GitHub" width="24" height="24"></a>
+<a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn" width="24" height="24"></a>
+<a href="https://wa.me/224627738111" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" width="24" height="24"></a>
+<a href="https://www.facebook.com/shamsoudine.camaraus" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" width="24" height="24"></a>
+<a href="#"><img src="https://cdn-icons-png.flaticon.com/24/5968/5968830.png" alt="X" width="24" height="24"></a>
+<a href="https://www.Instagram.com/shamsoudine.camaraus" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" width="24" height="24"></a>
+</div>
+            </div>
+            <div class="hero-photo">
+                <img src="Dineprofile.jpg" alt="Sidiki Camara profile photo" width="220" height="220">
+            </div>
+        </section>
+
+        <!-- 2. ABOUT SECTION (CSS Float) -->
+        <section id="about" class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="float-left">
+                <p>I am a Web Development student passionate about modern layout techniques and responsive design. I enjoy combining creativity and technology to build meaningful digital experiences.</p>
+                <p>I am currently learning HTML, CSS, and JavaScript while continuously improving my skills.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="float-right">
+                <h3>Contact Info</h3>
+                <p>Email: dicksoum22@gmail.com<br>Phone: +224 627 738 111</p>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS SECTION (Flexbox) -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">My Skills</h2>
+
+            <!-- Skill icons -->
+            <div class="flex-container skills-icons">
+                <div class="flex-item skill-badge">
+                    <img src="image.png" alt="HTML" width="28" height="28">
+                    <span>HTML</span>
+                </div>''
+                <div class="flex-item skill-badge">
+                    <img src="css.png" alt="CSS" width="28" height="28">
+                    <span>CSS</span>
+                </div>
+                <div class="flex-item skill-badge">
+                    <img src="Js.image.png" alt="JavaScript" width="28" height="28">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Highlight pills -->
+            <div class="flex-container highlight-pills">
+                <div class="flex-item pill">Clean Code</div>
+                <div class="flex-item pill">Responsive Design</div>
+                <div class="flex-item pill">Problem Solver</div>
+            </div>
+
+            <!-- Media cards -->
+            <div class="flex-container media-cards">
+                <div class="flex-item skill-card">
+                    <h3>Audio Introduction</h3>
+                    <audio controls>
+                        <source src="sample.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="flex-item skill-card">
+                    <h3>Video Presentation</h3>
+                    <video controls>
+                        <source src="sample.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. EDUCATION & CONTACT SECTION (CSS Grid) -->
+        <section id="education" class="education-section">
+            <h2 class="section-title">Education & Contact</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Education</h3>
+                    <table class="cv-table">
+                        <thead>
+                            <tr>
+                                <th>Degree / Skill</th>
+                                <th>Institution</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bachelor Web Dev</td>
+                                <td>University</td>
+                                <td>2025 - 2026</td>
+                            </tr>
+                            <tr>
+                                <td>HTML, CSS, JS</td>
+                                <td>Intermediate</td>
+                                <td>2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grid-item" id="contact">
+                    <h3>Send Me a Message</h3>
+                    <form class="contact-form" action="#" method="post" autocomplete="on">
+                        <label for="fullname">Name</label>
+                        <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Enter your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Write your message" required></textarea>
+
+                        <!-- Utility classes -->
+                        <button type="submit" class="bg-green-500 text-white p-3 rounded shadow-md hover:bg-green-600">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="page-footer">
+        <p>&copy; 2026 Sidiki Camara. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
