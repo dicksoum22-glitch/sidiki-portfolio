@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Tailwind CSS (prefix tw-, preflight off so it does not fight Bootstrap) -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (icon library) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script>
         tailwind.config = {
             prefix: 'tw-',
@@ -21,15 +24,15 @@
         };
     </script>
 </head>
+
 <body>
 
     <!-- Top navigation: Bootstrap navbar (collapses into a hamburger on mobile) -->
     <header class="site-header sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark container-fluid p-0">
             <a class="navbar-brand logo tw-text-2xl tw-font-bold" href="#home">Sidiki</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#mainNav" aria-controls="mainNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="mainNav">
@@ -54,26 +57,21 @@
                 <p>I build modern, responsive web pages using HTML, CSS, and JavaScript.</p>
 
                 <div class="hero-buttons">
-                    <a href="#education" class="btn btn-brand tw-shadow-md hover:tw-shadow-xl tw-transition">View My Work</a>
-                    <a href="#contact" class="btn btn-brand-outline tw-shadow-sm hover:tw-shadow-lg tw-transition">Contact Me</a>
+                    <a href="#education" class="btn btn-brand tw-shadow-md hover:tw-shadow-xl tw-transition">View My
+                        Work</a>
+                    <a href="#contact"
+                        class="btn btn-brand-outline tw-shadow-sm hover:tw-shadow-lg tw-transition">Contact Me</a>
                 </div>
 
                 <div class="social-icons">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="GitHub" width="24"
-                            height="24"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn"
-                            width="24" height="24"></a>
-                    <a href="https://wa.me/224627738111" target="_blank"><img
-                            src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" width="24"
-                            height="24"></a>
-                    <a href="https://www.facebook.com/shamsoudine.camaraus" target="_blank"><img
-                            src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" width="24"
-                            height="24"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/5968/5968830.png" alt="X" width="24"
-                            height="24"></a>
-                    <a href="https://www.Instagram.com/shamsoudine.camaraus" target="_blank"><img
-                            src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" width="24"
-                            height="24"></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/224627738111" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/shamsoudine.camaraus" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.Instagram.com/shamsoudine.camaraus" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <div class="hero-photo">
@@ -85,7 +83,8 @@
         <section id="about" class="about-container">
             <h2 class="section-title">About Me</h2>
             <div class="float-left">
-                <p>I am a Web Development student passionate about modern layout techniques and responsive design. I enjoy combining creativity and technology to build meaningful digital experiences.</p>
+                <p>I am a Web Development student passionate about modern layout techniques and responsive design. I
+                    enjoy combining creativity and technology to build meaningful digital experiences.</p>
                 <p>I am currently learning HTML, CSS, and JavaScript while continuously improving my skills.</p>
                 <ul class="list-group list-group-flush tw-mt-4">
                     <li class="list-group-item bg-transparent">HTML</li>
@@ -183,17 +182,21 @@
                     <form class="contact-form" action="#" method="post" autocomplete="on">
                         <div>
                             <label class="form-label" for="fullname">Name</label>
-                            <input type="text" id="fullname" name="fullname" class="form-input form-control" placeholder="Enter your name" required>
+                            <input type="text" id="fullname" name="fullname" class="form-input form-control"
+                                placeholder="Enter your name" required>
                         </div>
                         <div>
                             <label class="form-label" for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-input form-control" placeholder="Enter your email" required>
+                            <input type="email" id="email" name="email" class="form-input form-control"
+                                placeholder="Enter your email" required>
                         </div>
                         <div>
                             <label class="form-label" for="message">Message</label>
-                            <textarea id="message" name="message" class="form-textarea form-control" rows="4" placeholder="Write your message" required></textarea>
+                            <textarea id="message" name="message" class="form-textarea form-control" rows="4"
+                                placeholder="Write your message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-success tw-px-6 tw-py-3 tw-rounded-xl tw-shadow-md hover:tw-shadow-lg">
+                        <button type="submit"
+                            class="btn btn-success tw-px-6 tw-py-3 tw-rounded-xl tw-shadow-md hover:tw-shadow-lg">
                             Send Message
                         </button>
                     </form>
@@ -210,5 +213,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
 cdn.jsdelivr.net
