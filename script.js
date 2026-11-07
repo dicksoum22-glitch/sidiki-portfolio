@@ -248,35 +248,3 @@ console.log(me.fullName());
 // SHOW DATA
 // =====================================================
 console.log("Script finished running.");
-// --- Contact form: send to backend ---
-const contactForm = document.querySelector('.contact-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        const fullname = document.getElementById('fullname').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        try {
-            const response = await fetch('/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ fullname, email, message })
-            });
-
-            const result = await response.json();
-
-            if (response.ok) {
-                alert(result.message);
-                contactForm.reset();
-            } else {
-                alert(result.error || 'Something went wrong. Please try again.');
-            }
-        } catch (err) {
-            alert('Could not reach the server. Please try again later.');
-            console.error(err);
-        }
-    });
-}
